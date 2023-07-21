@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Fish Species Predictor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="static/css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Fish Species Predictor</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-7 col-lg-5">
+					<div class="wrap">
+						<div class="img" style="background-image: url(static/images/bg-1.jpg);"></div>
+						<div class="login-wrap p-4 p-md-5">
+			      	<div class="d-flex justify-content-center">
+			      		<div class="w-100 text-center">
+			      			<h6 class="mb-4">Enter the details below</h6>
+			      		</div>
+			      	</div>
+							<form action="/predict" class="signin-form" method="post">
+			      		<div class="form-group mt-3">
+			      			<input type="number" step="0.01" class="form-control" required id="weight" name="weight">
+			      			<label class="form-control-placeholder" for="weight">Weight of fish in grams</label>
+			      		</div>
+								<div class="form-group mt-3">
+			      			<input type="number" step="0.01" class="form-control" required id="vlength" name="vlength">
+			      			<label class="form-control-placeholder" for="vlength">Vertical length in cm</label>
+			      		</div>
+						<div class="form-group mt-3">
+			      			<input type="number" step="0.01" class="form-control" required id="dlength" name="dlength">
+			      			<label class="form-control-placeholder" for="dlength">Diagonal length in cm</label>
+			      		</div>
+						<div class="form-group mt-3">
+			      			<input type="number" step="0.01" class="form-control" required id="clength" name="clength">
+			      			<label class="form-control-placeholder" value="clength">Cross length in cm</label>
+			      		</div>
+						<div class="form-group mt-3">
+			      			<input type="number" step="0.01" class="form-control" required id="height" name="height">
+			      			<label class="form-control-placeholder" for="height">Height in cm</label>
+			      		</div>
+						<div class="form-group mt-3">
+			      			<input type="number" step="0.01" class="form-control" required id="width" name="width">
+			      			<label class="form-control-placeholder" for="width">Diagonal width in cm</label>
+			      		</div>
+
+		            <div class="form-group">
+		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Predict</button>
+		            </div>
+		          </form>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
